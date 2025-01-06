@@ -86,10 +86,16 @@ elif (valasztas=='5'):
                     for number in (mlist):
                         print(colored(number, "light_green"), end=", ")
                     print()
-                    
+
                 elif (muvelet=="t"):
                     mlist.pop(pozi)
                     print(colored("\nElem törölve. Új lista:", "light_green"))
                     for number in (mlist):
                         print(colored(number, "light_green"), end=", ")
-                    print()                
+                    print()    
+                else:
+                    print(colored("\nÉrvénytelen művelet!", "red"))
+            else:
+                print(colored("\nÉrvénytelen pozicio!", "red"))
+else:
+    print(colored("Érvénytelen választás!", "red"))             
