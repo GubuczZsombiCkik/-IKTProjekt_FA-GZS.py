@@ -39,3 +39,12 @@ elif (valasztas=='2'):
     for i in range(1,len(mlist)-1):
         if mlist[i]>mlist[i-1] and mlist[i]>mlist[i+1]:
             hegycsucssz+=1
+            
+    print(colored(f"(2.) Összesen {hegycsucssz} hegycsúcs.", "light_magenta"))
+
+elif (valasztas=='3'):
+    talalat=False  
+    for i in range(len(mlist)-1):
+        if mlist[i] == mlist[i+1]:
+            talalat=True
+            print(colored(f"(3.) {i+1} mérési ponton nyereg van!", "light_magenta"))
