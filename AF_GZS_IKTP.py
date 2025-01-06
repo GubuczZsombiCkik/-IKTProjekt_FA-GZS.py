@@ -14,3 +14,10 @@ menu = [
     ("Lista módosítása (hozzáadás, törlés, módosítás)"),
     ("Kilépés!"),
 ]
+
+menuv=True
+
+for i in range(len(menu)):
+    print(colored(f"{i+1}-{menu[i]}", "yellow"))
+
+valasztas = input(colored("Választás: ", "light_cyan"))
