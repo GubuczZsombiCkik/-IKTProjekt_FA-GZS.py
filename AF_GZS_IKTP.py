@@ -48,3 +48,9 @@ elif (valasztas=='3'):
         if mlist[i] == mlist[i+1]:
             talalat=True
             print(colored(f"(3.) {i+1} mérési ponton nyereg van!", "light_magenta"))
+
+    if not (talalat):
+        print(colored("(3.) Nincs nyereg pont!", "light_magenta"))
+
+elif (valasztas=='4'):
+    szkulonb=[]
