@@ -76,3 +76,10 @@ elif (valasztas=='5'):
             pozi=int(poziin)
             if (0<=pozi<len(mlist)):
                 muvelet=input(colored("[m]", "light_yellow")+" - Módosítás\n"+colored("[t]", "red")+" - Törlés\n").lower()
+    if (muvelet=="m"):
+                    ujertek=int(input(colored("Add meg az új értéket: ", "light_green")))
+                    mlist[pozi]=ujertek
+                    print("\nAz új lista értéke:")
+                    for number in (mlist):
+                        print(colored(number, "light_green"), end=", ")
+                    print()
