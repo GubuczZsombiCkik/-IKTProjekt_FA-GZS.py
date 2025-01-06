@@ -54,3 +54,9 @@ elif (valasztas=='3'):
 
 elif (valasztas=='4'):
     szkulonb=[]
+    for i in range(len(mlist)-1):
+        szkulonb.append(mlist[i+1]-mlist[i])
+
+    maxszkulonb=max(szkulonb)
+    maxpozi=szkulonb.index(maxszkulonb)
+    print(colored(f"(4.) {maxszkulonb} m volt a legnagyobb szintkülönbség a {maxpozi+ 1}. és {maxpozi + 2}. mérési pont között.", "light_magenta"))
