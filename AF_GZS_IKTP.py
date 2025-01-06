@@ -30,3 +30,12 @@ if (valasztas=='1'):
         if mlist[i]>maxm:
             kuszob+= 1
             maxm=mlist[i]
+
+    print(colored(f"(1.) {kuszob} küszöb van.", "light_magenta"))
+
+elif (valasztas=='2'):
+    hegycsucssz=0
+
+    for i in range(1,len(mlist)-1):
+        if mlist[i]>mlist[i-1] and mlist[i]>mlist[i+1]:
+            hegycsucssz+=1
