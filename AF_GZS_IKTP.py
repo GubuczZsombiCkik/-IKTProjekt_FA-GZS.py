@@ -60,3 +60,12 @@ elif (valasztas=='4'):
     maxszkulonb=max(szkulonb)
     maxpozi=szkulonb.index(maxszkulonb)
     print(colored(f"(4.) {maxszkulonb} m volt a legnagyobb szintkülönbség a {maxpozi+ 1}. és {maxpozi + 2}. mérési pont között.", "light_magenta"))
+
+elif (valasztas=='5'):
+    if (not mlist):
+        print(colored("A lista üres, nem lehet módosítani vagy törölni.", "red"))
+    else:
+        print(colored("\nJelenlegi lista:", "light_red"))
+        for number in mlist:
+            print(colored(number, "light_green"), end=", ")
+        print(5)
