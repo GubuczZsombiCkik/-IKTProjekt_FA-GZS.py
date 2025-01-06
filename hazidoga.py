@@ -1,3 +1,5 @@
+# Fulop Aron, Gubucz Zsombor Python első beadandó
+
 from termcolor import colored
 import random
 
@@ -37,11 +39,11 @@ elif (valasztas=='2'):
     for i in range(1,len(mlist)-1):
         if mlist[i]>mlist[i-1] and mlist[i]>mlist[i+1]:
             hegycsucssz+=1
-
+            
     print(colored(f"(2.) Összesen {hegycsucssz} hegycsúcs.", "light_magenta"))
 
 elif (valasztas=='3'):
-    talalat=False
+    talalat=False  
     for i in range(len(mlist)-1):
         if mlist[i] == mlist[i+1]:
             talalat=True
