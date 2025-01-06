@@ -21,3 +21,12 @@ for i in range(len(menu)):
     print(colored(f"{i+1}-{menu[i]}", "yellow"))
 
 valasztas = input(colored("Választás: ", "light_cyan"))
+
+if (valasztas=='1'):
+    kuszob=0
+    maxm=mlist[0]
+
+    for i in range(1,len(mlist)):
+        if mlist[i]>maxm:
+            kuszob+= 1
+            maxm=mlist[i]
