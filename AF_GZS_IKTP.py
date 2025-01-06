@@ -69,3 +69,12 @@ elif (valasztas=='5'):
         for number in mlist:
             print(colored(number, "light_green"), end=", ")
         print(5)
+
+        poziin=input(colored("Add meg a módosítani vagy törölni kívánt elem poziciojat (0-tól kezdve): ", "light_green"))
+
+        if (poziin=="" or not poziin.isnumeric()):
+            print(colored("\nÉrvénytelen pozicio! Csak számot adjon meg.", "red"))
+        else:
+            pozi=int(poziin)
+            if (0<=pozi<len(mlist)):
+                muvelet=input(colored("[m]", "light_yellow")+" - Módosítás\n"+colored("[t]", "red")+" - Törlés\n").lower()
